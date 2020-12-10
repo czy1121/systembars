@@ -13,9 +13,6 @@
 - 适配 Android R(API30)
 - 最低要求 API21+
 
-
-![s](screenshot.jpg) 
-
 ## Gradle
 
 ``` groovy
@@ -26,6 +23,11 @@ dependencies {
     implementation "me.reezy.jetpack:systembars:0.4.0" 
 }
 ```
+
+## Screenshot
+
+![s](screenshot.jpg) 
+
 
 
 ## LICENSE
