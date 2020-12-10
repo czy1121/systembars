@@ -14,7 +14,7 @@
 - 最低要求 API21+
 
 
-![s](screenshot.png) 
+![s](screenshot.jpg) 
 
 ## Gradle
 
