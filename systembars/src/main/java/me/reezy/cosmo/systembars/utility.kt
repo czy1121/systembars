@@ -34,7 +34,6 @@ fun Window.immersive(barsBehavior: Int = WindowInsetsControllerCompat.BEHAVIOR_S
     ic.systemBarsBehavior = barsBehavior
     // 隐藏系统栏
     ic.hide(WindowInsetsCompat.Type.systemBars())
-
 }
 
 // 退出沉浸式
