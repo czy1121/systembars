@@ -1,7 +1,5 @@
 
-apply from: "https://gitee.com/ezy/gradle/raw/master/build-library-app.gradle"
-
-apply plugin: 'kotlin-android-extensions'
+apply from: "$buildGradlePath/build-library-demo.gradle"
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])

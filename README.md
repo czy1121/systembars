@@ -3,7 +3,7 @@
 系统栏工具库
 
 - 设置系统栏背景色
-- 设置覆盖在应用内容上
+- 设置系统栏覆盖在应用内容上
 - 设置系统栏浅色模式
 - 设置是否在系统栏颜色为0时，显示默认的系统栏半透明背景
 - 设置沉浸式系统栏
@@ -13,14 +13,19 @@
 - 适配 Android R(API30)
 - 最低要求 API21+
 
+系统栏与沉浸式
+https://juejin.cn/post/6904545697552007181
+
+![screenshot](screenshot.png)
+
 ## Gradle
 
 ``` groovy
 repositories { 
-    maven { url "https://gitee.com/ezy/repo/raw/android_public/"}
+    maven { url "https://gitee.com/ezy/repo/raw/cosmo/"}
 } 
 dependencies {
-    implementation "me.reezy.jetpack:systembars:0.4.0" 
+    implementation "me.reezy.cosmo:systembars:0.7.0"
 }
 ```
 
@@ -31,7 +36,7 @@ interface Bar {
     // 设置系统栏背景色
     fun color(@ColorInt color: Int): Bar
 
-    // 设置覆盖在应用内容上
+    // 设置系统栏覆盖在应用内容上
     fun overlay(value: Boolean = true): Bar
     
     // 设置系统栏浅色模式
@@ -54,8 +59,11 @@ fun Activity.navigationBar(): Bar = NavigationBar(window)
 fun Fragment.navigationBar(): Bar = NavigationBar(requireActivity().window)
 fun Dialog.navigationBar(): Bar = NavigationBar(window!!)
 
+// 进入沉浸式
+fun Window.immersive(barsBehavior: Int = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE)
 
-fun Window.immersive(enable: Boolean = true, swipe: Boolean = false, transientBars: Boolean = false)
+// 退出沉浸式
+fun Window.immersiveExit()
 
 var Window.isDrawsSystemBarBackgrounds: Boolean
 
@@ -67,11 +75,6 @@ var Window.isNavigationBarLight: Boolean
 
 
 ```
-
-## Screenshot
-
-![s](screenshot.jpg) 
-
 
 
 ## LICENSE

@@ -1,6 +1,19 @@
-
-rootProject.name = rootProject.projectDir.name
-
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url cosmoRepoPath }
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "systembars"
 include ':app'
 
 include ':systembars'

@@ -29,7 +29,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -51,7 +51,7 @@
                     android:layout_gravity="center"
                     android:text="StatusBar"/>
 
-                <me.reezy.ui.bk.BKTextView
+                <me.reezy.cosmo.bk.BKTextView
                     android:id="@+id/color"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -60,9 +60,9 @@
                     android:gravity="center"
                     android:text="COLOR"
                     app:bkCornerRadius="10dp"
-                    app:bkSolidColor="@android:color/holo_green_dark" />
+                    app:bkBackgroundColor="@android:color/holo_green_dark" />
 
-                <me.reezy.ui.bk.BKTextView
+                <me.reezy.cosmo.bk.BKTextView
                     android:id="@+id/light"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -71,9 +71,9 @@
                     android:gravity="center"
                     android:text="LIGHT"
                     app:bkCornerRadius="10dp"
-                    app:bkSolidColor="@android:color/holo_green_dark" />
+                    app:bkBackgroundColor="@android:color/holo_green_dark" />
 
-                <me.reezy.ui.bk.BKTextView
+                <me.reezy.cosmo.bk.BKTextView
                     android:id="@+id/contrast"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -82,9 +82,9 @@
                     android:gravity="center"
                     android:text="CONTRAST"
                     app:bkCornerRadius="10dp"
-                    app:bkSolidColor="@android:color/holo_green_dark" />
+                    app:bkBackgroundColor="@android:color/holo_green_dark" />
 
-                <me.reezy.ui.bk.BKTextView
+                <me.reezy.cosmo.bk.BKTextView
                     android:id="@+id/overlay"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -93,7 +93,7 @@
                     android:gravity="center"
                     android:text="OVERLAY"
                     app:bkCornerRadius="10dp"
-                    app:bkSolidColor="@android:color/holo_green_dark" />
+                    app:bkBackgroundColor="@android:color/holo_green_dark" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -109,7 +109,7 @@
                     android:layout_gravity="center"
                     android:text="NavigationBar"/>
 
-                <me.reezy.ui.bk.BKTextView
+                <me.reezy.cosmo.bk.BKTextView
                     android:id="@+id/color2"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -118,9 +118,9 @@
                     android:gravity="center"
                     android:text="COLOR"
                     app:bkCornerRadius="10dp"
-                    app:bkSolidColor="@android:color/holo_green_dark" />
+                    app:bkBackgroundColor="@android:color/holo_green_dark" />
 
-                <me.reezy.ui.bk.BKTextView
+                <me.reezy.cosmo.bk.BKTextView
                     android:id="@+id/light2"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -129,9 +129,9 @@
                     android:gravity="center"
                     android:text="LIGHT"
                     app:bkCornerRadius="10dp"
-                    app:bkSolidColor="@android:color/holo_green_dark" />
+                    app:bkBackgroundColor="@android:color/holo_green_dark" />
 
-                <me.reezy.ui.bk.BKTextView
+                <me.reezy.cosmo.bk.BKTextView
                     android:id="@+id/contrast2"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -140,9 +140,9 @@
                     android:gravity="center"
                     android:text="CONTRAST"
                     app:bkCornerRadius="10dp"
-                    app:bkSolidColor="@android:color/holo_green_dark" />
+                    app:bkBackgroundColor="@android:color/holo_green_dark" />
 
-                <me.reezy.ui.bk.BKTextView
+                <me.reezy.cosmo.bk.BKTextView
                     android:id="@+id/overlay2"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -151,11 +151,11 @@
                     android:gravity="center"
                     android:text="OVERLAY"
                     app:bkCornerRadius="10dp"
-                    app:bkSolidColor="@android:color/holo_green_dark" />
+                    app:bkBackgroundColor="@android:color/holo_green_dark" />
             </LinearLayout>
         </LinearLayout>
 
-        <me.reezy.ui.bk.BKTextView
+        <me.reezy.cosmo.bk.BKTextView
             android:id="@+id/background"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -165,8 +165,8 @@
             android:gravity="center"
             android:text="BACKGROUND"
             app:bkCornerRadius="10dp"
-            app:bkSolidColor="@android:color/holo_green_dark" />
-        <me.reezy.ui.bk.BKTextView
+            app:bkBackgroundColor="@android:color/holo_green_dark" />
+        <me.reezy.cosmo.bk.BKTextView
             android:id="@+id/immersive_touch"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -174,10 +174,10 @@
             android:layout_marginHorizontal="10dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:text="IMMERSIVE TOUCH"
+            android:text="immersive(SHOW_BARS_BY_TOUCH)"
             app:bkCornerRadius="10dp"
-            app:bkSolidColor="@android:color/holo_green_dark" />
-        <me.reezy.ui.bk.BKTextView
+            app:bkBackgroundColor="@android:color/holo_green_dark" />
+        <me.reezy.cosmo.bk.BKTextView
             android:id="@+id/immersive_swipe"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -185,10 +185,10 @@
             android:layout_marginHorizontal="10dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:text="IMMERSIVE SWIPE"
+            android:text="immersive(SHOW_BARS_BY_SWIPE)"
             app:bkCornerRadius="10dp"
-            app:bkSolidColor="@android:color/holo_green_dark" />
-        <me.reezy.ui.bk.BKTextView
+            app:bkBackgroundColor="@android:color/holo_green_dark" />
+        <me.reezy.cosmo.bk.BKTextView
             android:id="@+id/immersive_transient"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -196,9 +196,20 @@
             android:layout_marginHorizontal="10dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:text="IMMERSIVE SWIPE TRANSIENT"
+            android:text="immersive(SHOW_TRANSIENT_BARS_BY_SWIPE)"
             app:bkCornerRadius="10dp"
-            app:bkSolidColor="@android:color/holo_green_dark" />
+            app:bkBackgroundColor="@android:color/holo_green_dark" />
+        <me.reezy.cosmo.bk.BKTextView
+            android:id="@+id/immersive_exit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="immersiveExit"
+            app:bkCornerRadius="10dp"
+            app:bkBackgroundColor="@android:color/holo_green_dark" />
     </LinearLayout>
 
 </FrameLayout>
