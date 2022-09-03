@@ -16,7 +16,7 @@
 系统栏与沉浸式
 https://juejin.cn/post/6904545697552007181
 
-![screenshot](screenshot.png)
+![screenshot](screenshot1.png)
 
 ## Gradle
 
