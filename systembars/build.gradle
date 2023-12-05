@@ -2,6 +2,6 @@
 apply from: "$buildGradlePath/build-library-android.gradle"
 
 dependencies {
-    api "androidx.core:core-ktx:1.8.0"
-    api 'androidx.fragment:fragment-ktx:1.5.2'
+    api libs.androidx.core
+    api libs.androidx.fragment
 }
